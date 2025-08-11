@@ -1,0 +1,59 @@
+                <!-- 
+High Level Design for Patient Appointment Management System
+
+1. Overview:
+   The Patient Appointment Management System is a web-based application that allows healthcare providers to manage patient records and appointments efficiently. The system consists of a frontend (user interface), backend (API and business logic), and a database.
+
+2. Main Components:
+   a. Frontend (patient-appointment-system/frontend):
+      - Built with HTML, CSS (Bootstrap), and JavaScript.
+      - Provides user interfaces for dashboard, patient management, appointment scheduling, and booking.
+      - Communicates with backend APIs to fetch and update data.
+
+   b. Backend (patient-appointment-system/backend):
+      - RESTful API built with a framework such as Node.js/Express or Python/Flask.
+      - Handles authentication, business logic, and data validation.
+      - Exposes endpoints for patients, appointments, and user management.
+
+   c. Database:
+      - Stores patient records, appointment details, and user information.
+      - Can use relational (e.g., PostgreSQL, MySQL) or NoSQL (e.g., MongoDB) database.
+
+3. Key Features:
+   - User authentication and authorization.
+   - Patient CRUD (Create, Read, Update, Delete) operations.
+   - Appointment scheduling, rescheduling, and cancellation.
+   - Dashboard with statistics and quick actions.
+   - Responsive design for desktop and mobile devices.
+
+4. Folder Structure:
+   patient-appointment-system/
+   ├── backend/
+   │   ├── app.js / main.py
+   │   ├── routes/
+   │   ├── models/
+   │   └── controllers/
+   ├── frontend/
+   │   ├── index.html
+   │   ├── css/
+   │   └── js/
+   └── database/
+       └── schema.sql / models.js
+
+5. Data Flow:
+   - User interacts with the frontend.
+   - Frontend sends requests to backend API.
+   - Backend processes requests, interacts with the database, and returns responses.
+   - Frontend updates the UI based on API responses.
+
+6. Security Considerations:
+   - Use HTTPS for secure communication.
+   - Implement authentication (e.g., JWT tokens).
+   - Validate and sanitize all user inputs.
+
+7. Scalability:
+   - Modular backend and frontend code for easy maintenance.
+   - Database indexing for efficient queries.
+   - Option to deploy using Docker or cloud services.
+
+-->
